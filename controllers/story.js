@@ -135,8 +135,8 @@ export const createCheckoutSession = async (req, res) => {
             mode: 'payment',
             client_reference_id: `${storyId}_${userId}`,
             // Append the session ID to the success URL
-            success_url: `${process.env.FRONTEND_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
-            cancel_url: `${process.env.FRONTEND_URL}/cancel`,
+            success_url: `https://monumental-basbousa-dc5cd9.netlify.app/success?session_id={CHECKOUT_SESSION_ID}`,
+            cancel_url: `https://monumental-basbousa-dc5cd9.netlify.app/cancel`,
         });
 
         res.status(200).json({ url: session.url });
