@@ -1,6 +1,6 @@
 
 
-import { Story } from "../models/story.js";
+import { Story } from "../models/Story.js";
 import cloudinary from "cloudinary";
 import getDataUrl from "../utils/urlGenrator.js";
 import { User } from "../models/User.js";
